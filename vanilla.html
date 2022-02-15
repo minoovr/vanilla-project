@@ -15,67 +15,76 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="weather-search-form" id="searchedcity">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="weather-search-form" id="searchedcity">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city"
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="form-control btn btn-primary"
+                  id="search-button"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  id="current-button"
+                >
+                  📍
+                </button>
+              </div>
+            </div>
+          </form>
+          <h1>Sydney NSW, Australia</h1>
+          <ul>
+            <li class="current-time" id="nowtime">Wednesday 22:00</li>
+            <li id="description">Partly Cloudy</li>
+          </ul>
           <div class="row">
             <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type a city"
-                class="form-control"
-                id="city-input"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="search"
-                class="form-control btn btn-primary"
-                id="search-button"
-              />
-            </div>
-            <div class="col-3">
-              <button type="button" class="btn btn-warning" id="current-button">
-                📍
-              </button>
-            </div>
-          </div>
-        </form>
-        <h1>Sydney NSW, Australia</h1>
-        <ul>
-          <li class="current-time" id="nowtime">Wednesday 22:00</li>
-          <li id="description">Partly Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon"
-              />
+              <div class="clearfix">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy icon"
+                  class="weather-icon"
+                />
 
-              <span class="temperature" id="temperature">19</span
-              ><span class="units">
-                <a href="#" id="celsius" class="celsius">°C</a>
-              </span>
+                <span class="temperature" id="temperature">19</span
+                ><span class="celsius-units">
+                  <a href="#" id="celsius" class="celsius">°C</a>
+                </span>
+                <span class="fahrenheit-units"
+                  ><a href="#" id="fahrenheit" class="fahrenheit">|°F</a></span
+                >
+              </div>
             </div>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>Precipitation: <span id="precipitation">0</span>%</li>
-              <li>Humidity: <span id="humidity">77</span> %</li>
-              <li>Wind: <span id="wind">8</span>km/h</li>
-            </ul>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: <span id="precipitation">0</span>%</li>
+                <li>Humidity: <span id="humidity">77</span> %</li>
+                <li>Wind: <span id="wind">8</span>km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
+        <small>
+          <a href="https://github.com/minoovr/vanilla-project" target="_blank"
+            >Open-source code</a
+          >
+          by Minoo Vahedi Raad
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/minoovr/vanilla-project" target="_blank"
-          >Open-source code</a
-        >
-        by Minoo Vahedi Raad
-      </small>
     </div>
   </body>
   <script src="vanilla.js"></script>
